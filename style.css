@@ -27,8 +27,9 @@ header {
 .heading-group {
     display: flex;
     align-items: center;
-    width: 75%;
     padding: 20px;
+    max-width: 70rem;
+    margin: auto;
 }
 
 .image-group {
@@ -77,4 +78,77 @@ header {
 .heading-text-links > span {
     margin-left: 10px;
     cursor: pointer;
+}
+
+.work-section {
+    display: flex;
+    flex-direction: column;
+    max-width: 70rem;
+    margin: auto;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+}
+
+.work-header {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    letter-spacing: 2px;
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+.work-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.work-card {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-image {
+    width: 100%;
+    height: 17rem;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.card-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-header {
+    letter-spacing: 1.5px;
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
+.card-icons {
+    display: flex;
+    align-items: center;
+}
+
+.card-icon {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.card-text {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-weight: 100;
 }
