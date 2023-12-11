@@ -152,3 +152,77 @@ header {
     padding-bottom: 20px;
     font-weight: 100;
 }
+
+.contact-section {
+    background-color: #386641;
+    color: #fff;
+}
+
+.contact-container {
+    max-width: 70rem;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.contact-header {
+    font-size: 1.7rem;
+    font-weight: 100;
+}
+
+.contact-text {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.contact-phone {
+    width: 24%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.contact-mail {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.svg-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.contact-icons {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.contact-icon {
+    cursor: pointer;
+    color: black;
+}
+
+.contact-image {
+    width: 100%;
+    height: 22rem;
+}
