@@ -261,3 +261,59 @@ header {
         max-width: 45rem;
     }
 }
+
+@media only screen and (max-width: 600px) {
+    .heading-group {
+        flex-direction: column;
+        padding: 50px;
+    }
+
+    .header-bg {
+        height: 50%;
+    }
+
+    .heading-image-text {
+        font-size: 4rem;
+    }
+
+    .text-group {
+        padding: 0;
+        box-shadow: none;
+    }
+
+    .heading-text-links {
+        justify-content: center;
+    }
+
+    .work-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .contact-container {
+        grid-template-columns: repeat(1, 1fr);
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 0;
+    }
+
+    .contact-content {
+        padding: 20px;
+    }
+
+    .contact-icons {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .contact-mail {
+        padding-top: 0;
+    }
+
+    .svg-icon {
+        display: none;
+    }
+
+    .contact-icon {
+        margin-left: 10px;
+    }
+}
