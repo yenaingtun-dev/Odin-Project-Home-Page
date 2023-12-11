@@ -16,12 +16,24 @@ h6 {
 }
 
 header {
-    background-color: #386641;
     margin: auto;
     display: flex;
     justify-content: center;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    /* clip-path: polygon(0% 0%, 100% 0%, 100% 54%, 0% 100%); */
+    position: relative;
+    overflow: hidden;
+}
+
+.header-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #386641;
+    transform: skewY(-10deg);
+    transform-origin: top left;
+    z-index: -1;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
 .heading-group {
@@ -30,6 +42,8 @@ header {
     padding: 20px;
     max-width: 70rem;
     margin: auto;
+    position: relative;
+    z-index: 1; /* Place the content in front of the background */
 }
 
 .image-group {
@@ -56,6 +70,7 @@ header {
 .text-group {
     background-color: #fff;
     padding: 40px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .heading-text-header {
